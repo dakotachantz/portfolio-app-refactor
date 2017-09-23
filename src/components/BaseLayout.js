@@ -5,7 +5,13 @@ const styles = {
     nav: {
         position: 'fixed',
         top: 0,
-        padding: 0
+        padding: 0,
+        width: '100%',
+        height: '3em'
+    },
+    link: {
+        color: '#fff',
+        textDecoration: 'none'
     }
 }
 
@@ -15,24 +21,38 @@ export default class BaseLayout extends Component {
             <div>
                 <nav style={styles.nav} className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
                     <div className="container nav">
-                        <Link className="navbar-brand" to="#page-top">Dakota Nichols</Link>
+                        <Link className="navbar-brand" to="">Dakota Nichols</Link>
                         <div className="" id="navbarResponsive">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <NavLink activeClassName="selected" className="nav-link" exact to="/">Home</NavLink>
+                                    <NavLink style={styles.link} activeStyle={{ color: '#fec503' }} className="nav-link" exact to="/">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink>
+                                    <NavLink style={styles.link} activeStyle={{ color: '#fec503' }} className="nav-link" to="/about">About</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink activeClassName="selected" className="nav-link" to="/portfolio">Portfolio</NavLink>
+                                    <NavLink style={styles.link} activeStyle={{ color: '#fec503' }} className="nav-link" to="/portfolio">Portfolio</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink style={styles.link} activeStyle={{ color: '#fec503' }} className="nav-link" to="/contact">Contact</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink style={styles.link} activeStyle={{ color: '#fec503' }} className="nav-link" to="/references">References</NavLink>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
                 {this.props.children}
-                <footer>
+                <footer className="footer" style={{
+                    bottom: 0,
+                    width: '100%',
+                    height: '5em',
+                    position: 'absolute',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-4">
@@ -60,7 +80,7 @@ export default class BaseLayout extends Component {
                         </div>
                     </div>
                 </footer>
-            </div>
+            </div >
         )
     }
 }

@@ -8,7 +8,7 @@ export default class Home extends Component {
                     <div className="intro-text">
                         <div className="intro-lead-in">Welcome to My Portfolio Site!</div>
                         <div className="intro-heading">It's Nice To Meet You</div>
-                        <Link className="btn btn-xl" to="/portfolio">Check out my work!</Link>
+                        <Link style={{ color: 'white' }} className="btn btn-xl" to="/portfolio">Check out my work!</Link>
                     </div>
                 </div>
             </header>
