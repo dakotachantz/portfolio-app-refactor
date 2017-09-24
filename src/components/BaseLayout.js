@@ -61,26 +61,26 @@ export default class BaseLayout extends Component {
                             <div className="col-md-4">
                                 <ul className="list-inline social-buttons">
                                     <li className="list-inline-item">
-                                        <Link to="#">
+                                        <a href="https://github.com/dakotachantz">
                                             <i className="fa fa-github"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <Link to="#">
+                                        <a href="">
                                             <i className="fa fa-file-text"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <Link to="#">
+                                        <a href="https://www.linkedin.com/in/dakotachantz/">
                                             <i className="fa fa-linkedin"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </footer>
-            </div >
+            </div>
         )
     }
 }

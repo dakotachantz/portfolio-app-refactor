@@ -16,22 +16,22 @@ export default class Portfolio extends Component {
                             <div className="col-md-4 col-sm-6 portfolio-item">
                                 <img className="portfolioImg" src={portfolioImg} alt="" />
                                 <div className="portfolio-caption">
-                                    <h4>Threads</h4>
-                                    <p className="text-muted">Illustration</p>
+                                    <h4>Code Snippet</h4>
+                                    <p className="text-muted">Built with Node, Express, HTML, CSS, and JavaScript</p>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 portfolio-item">
                                 <img className="portfolioImg" src={portfolioImg} alt="" />
                                 <div className="portfolio-caption">
-                                    <h4>Explore</h4>
-                                    <p className="text-muted">Graphic Design</p>
+                                    <h4>Sample Portfolio</h4>
+                                    <p className="text-muted">Built with React, JavaScript, React Router, and Bootstrap</p>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-6 portfolio-item">
                                 <img className="portfolioImg" src={portfolioImg} alt="" />
                                 <div className="portfolio-caption">
-                                    <h4>Finish</h4>
-                                    <p className="text-muted">Identity</p>
+                                    <h4>Simple React Blog</h4>
+                                    <p className="text-muted">Built with React, JavaScript, React Router, and Bootstrap</p>
                                 </div>
                             </div>
                         </div>
